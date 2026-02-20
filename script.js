@@ -11,5 +11,5 @@ function SendMail() {
     const FotoNei = document.getElementById("fotoNei").value;
     const Foresatte = document.getElementById("foresatte").value;
 
-    window.location.href = "mailto:amlie.koder@gmail.com?navn="+Navn+"alder="+Alder+"epost="+Epost+"mobil="+Mobil+"type="+Type+"beskrivelse="+Beskrivelse+"lengde="+Lengde+"teknisk="+Teknisk+"fotoja="+FotoJa+"fotonei="+FotoNei+"foresatte="+Foresatte
+    window.location.href = "mailto:amlie.koder@gmail.com?navn="+Navn+"alder="+Alder+"epost="+Epost+"mobil="+Mobil+"type="+Type+"beskrivelse="+Beskrivelse+"lengde="+Lengde+"teknisk="+Teknisk+"fotoja="+FotoJa+"fotonei="+FotoNei+"foresatte="+Foresatte;
 }
