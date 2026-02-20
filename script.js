@@ -7,9 +7,22 @@ function SendMail() {
     const Beskrivelse = document.getElementById("beskrivelse").value;
     const Lengde = document.getElementById("lengde").value;
     const Teknisk = document.getElementById("teknisk").value;
-    const FotoJa = document.getElementById("fotoja").value;
-    const FotoNei = document.getElementById("fotoNei").value;
+    const FotoJa = document.getElementById("fotoja").checked ? "Ja" : "Nei";
     const Foresatte = document.getElementById("foresatte").value;
 
-    window.location.href = "mailto:amlie.koder@gmail.com?navn="+Navn+"alder="+Alder+"epost="+Epost+"mobil="+Mobil+"type="+Type+"beskrivelse="+Beskrivelse+"lengde="+Lengde+"teknisk="+Teknisk+"fotoja="+FotoJa+"fotonei="+FotoNei+"foresatte="+Foresatte;
+    const body =
+        "Navn: " + Navn + "\n" +
+        "Alder: " + Alder + "\n" +
+        "Epost: " + Epost + "\n" +
+        "Mobil: " + Mobil + "\n" +
+        "Type: " + Type + "\n" +
+        "Beskrivelse: " + Beskrivelse + "\n" +
+        "Lengde: " + Lengde + "\n" +
+        "Teknisk: " + Teknisk + "\n" +
+        "Foto tillatt: " + FotoJa + "\n" +
+        "Foresatte: " + Foresatte;
+
+    window.location.href =
+        "mailto:amlie.koder@gmail.com?subject=" + encodeURIComponent("Påmelding") +
+        "&body=" + encodeURIComponent(body);
 }
