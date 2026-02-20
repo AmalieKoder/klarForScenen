@@ -1,0 +1,6 @@
+/* Main */
+
+Form {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klar for scenen</title>
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+           <h1>Scenen er din - 21.Mars</h1>
+        <div>
+            <p>Har du lyst til å stå på scenen og vise hva du kan?
+               Vi åpner senterscenen for kreative innslag - musikk, dans, show, stand-up, dikt eller noe helt annet. 
+            </p>
+            <p>Dette er en uformell arena med lav terskel og god stemning.
+                Enten du har opptrådt før eller vil teste noe nytt, er du hjertelig velkommen.
+            </p>
+        </div>
+        <h2>
+            Meld Deg på under!
+        </h2> 
+        </section>
+        <section>
+            <h3>Praktisk informasjon</h3>
+            <div>
+                <p>Dato: 21.Mars</p>
+                <p>Tid: kl. 12.00 - 14.00</p>
+                <p>Sted: Frekhaug Senter - utendørs scene</p>
+                <ul>
+                    <li>Ca. 5-15 minutter per innslag</li>
+                    <li>Solo og gruppe er velkommen</li>
+                    <li>Scene og lydanlegg tilgjengelig</li>
+                    <li>Oppmøte ca. 15 min før opptreden</li>
+                </ul>
+                <p>Ved sikkelig dårlig vær informerer vil arrangementet bli avlyst.</p>
+            </div>
+        </section>
+        <section>
+            <h3>Hvem passer dette for?</h3>
+            <p>Alle som vil dele noe kreativt!</p>
+            <p>Barn, ungdom, voksne, venner, band, dansere og entertainere - her er det rom for mangfold.</p>
+        </section>
+        <section>
+            <h3>Klar for scenen?</h3>
+            <div>
+                <p>Grip sjansen, samle venner eller kom alene.</p>
+                <p>Vi gleder oss til å oppleve hva du vil dele!</p>
+                <p>Frist for påmelding: Fredag 13 mars.</p>
+            </div>
+            <p>Meld deg på nå:</p>
+            <div> 
+                <form action="mailto:" method="post" enctype="text/plain">
+                    <label for="navn">Nav / Gruppenavn</label>
+                    <input type="text" id="navn" name="navn" required>
+
+                    <label for="alder">Alder / Aldersgruppe</label>
+                    <input type="text" id="alder" name="alder">
+
+                    <label for="epost">E-post</label>
+                    <input type="email" id="epost" name="epost" required>
+
+                    <label for="mobil">Mobil</label>
+                    <input type="tel" id="mobil" name="mobil">
+                    
+                    <label for="type">Type opptreden</label>
+                    <select name="type" id="type">
+                        <option value="">Velg type</option>
+                        <option>Sang</option>
+                        <option>Dans</option>
+                        <option>Teater</option>
+                        <option>Musikk</option>
+                        <option>Show</option>
+                        <option>stand-up</option>
+                        <option>Dikt</option>
+                        <option>Annet</option>
+                    </select>
+
+                    <label for="beskrivelse">Kort beskrivelse</label>
+                    <textarea id="beskrivelse" name="beskrivelse" rows="4"></textarea>
+
+                    <label for="lengde">Lengde på innslag</label>
+                    <input type="text" id="lengde" name="lengde" placeholder="10 minutter">
+
+                    <label for="teknisk">Teknisk behov</label>
+                    <textarea name="teknisk" id="teknisk" rows="3"></textarea>
+
+                    <label>Kan vi ta bilder/filme og legge ut i sosiale medier?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="fotoja" name="foto" value="ja">
+                        <label for="foroja">Ja</label>
+
+                        <input type="radio" id="fotnei" name="foto" value="nei">
+                        <label for="foronei">Nei</label>
+                    </div>
+
+                    <label for="foresatte">foresatte (for deltaker under 16 år)</label>
+                    <input type="text" id="foresatte" name="foresatte" placeholder="Navn og kontakinfo">
+
+                    <button type="submit">Send inn</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
