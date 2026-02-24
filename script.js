@@ -8,6 +8,7 @@ function SendMail() {
     const Lengde = document.getElementById("lengde").value;
     const Teknisk = document.getElementById("teknisk").value;
     const FotoJa = document.getElementById("fotoja").value;
+    const FotoNei = document.getElementById("fotonei").value;
     const Foresatte = document.getElementById("foresatte").value;
 
     const body =
@@ -19,7 +20,7 @@ function SendMail() {
         "Beskrivelse: " + Beskrivelse + "\n" +
         "Lengde: " + Lengde + "\n" +
         "Teknisk: " + Teknisk + "\n" +
-        "Foto tillatt: " + FotoJa + "\n" +
+        "Foto tillatt: " + FotoJa + FotoNei + "\n" +
         "Foresatte: " + Foresatte;
 
     window.location.href =
