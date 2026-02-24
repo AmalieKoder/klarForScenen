@@ -20,7 +20,8 @@ function SendMail() {
         "Beskrivelse: " + Beskrivelse + "\n" +
         "Lengde: " + Lengde + "\n" +
         "Teknisk: " + Teknisk + "\n" +
-        "Foto tillatt: " + FotoJa + FotoNei + "\n" +
+        "Foto tillatt: " + FotoJa + "\n" +
+        "Foto tillatt: " + FotoNei + "\n" +
         "Foresatte: " + Foresatte;
 
     window.location.href =
