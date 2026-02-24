@@ -26,4 +26,8 @@ function SendMail() {
     window.location.href =
         "mailto:amlie.koder@gmail.com?subject=" + encodeURIComponent("Påmelding") +
         "&body=" + encodeURIComponent(body);
+
+    document.querySelector("form").style.display = "none";
+
+    document.getElementById("takkMelding").style.display = "block";
 }
