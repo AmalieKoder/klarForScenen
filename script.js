@@ -8,8 +8,8 @@ function SendMail() {
     const Lengde = document.getElementById("lengde").value;
     const Teknisk = document.getElementById("teknisk").value;
     const Foresatte = document.getElementById("foresatte").value;
-    const foto = document.querySelector('input[name="foto]:value');
-    const Foto = foto ? foto.value : "ikke valkt";
+    const valgtFoto = document.querySelector('input[name="foto"]:checked');
+    const Foto = valgtFoto ? valgtFoto.value : "ikke valgt";
 
     const body =
         "Navn: " + Navn + "\n" +
