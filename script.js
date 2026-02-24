@@ -7,9 +7,9 @@ function SendMail() {
     const Beskrivelse = document.getElementById("beskrivelse").value;
     const Lengde = document.getElementById("lengde").value;
     const Teknisk = document.getElementById("teknisk").value;
-    const FotoJa = document.getElementById("fotoja").value;
-    const FotoNei = document.getElementById("fotonei").value;
     const Foresatte = document.getElementById("foresatte").value;
+    const foto = document.querySelector('input[name="foto]:checked');
+    const Foto = foto ? foto.value : "ikke valkt";
 
     const body =
         "Navn: " + Navn + "\n" +
@@ -20,8 +20,7 @@ function SendMail() {
         "Beskrivelse: " + Beskrivelse + "\n" +
         "Lengde: " + Lengde + "\n" +
         "Teknisk: " + Teknisk + "\n" +
-        "Foto tillatt: " + FotoJa + "\n" +
-        "Foto tillatt: " + FotoNei + "\n" +
+        "Foto/film tillatt: " + Foto + "\n" +
         "Foresatte: " + Foresatte;
 
     window.location.href =
