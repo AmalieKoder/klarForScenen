@@ -7,7 +7,7 @@ function SendMail() {
     const Beskrivelse = document.getElementById("beskrivelse").value;
     const Lengde = document.getElementById("lengde").value;
     const Teknisk = document.getElementById("teknisk").value;
-    const FotoJa = document.getElementById("fotoja").checked;
+    const FotoJa = document.getElementById("fotoja").value;
     const Foresatte = document.getElementById("foresatte").value;
 
     const body =
