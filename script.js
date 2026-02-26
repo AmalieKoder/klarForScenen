@@ -24,10 +24,10 @@ function SendMail() {
         "Foresatte: " + Foresatte;
 
     window.location.href =
-        "mailto:amlie.koder@gmail.com?subject=" + encodeURIComponent("Påmelding") +
+        "mailto:vibeke.valestrand@glode.no?subject=" + encodeURIComponent("Påmelding") +
         "&body=" + encodeURIComponent(body);
 
     document.querySelector("form").style.display = "none";
 
     document.getElementById("takkMelding").style.display = "block";
-}
+} 
