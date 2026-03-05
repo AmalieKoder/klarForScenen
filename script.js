@@ -24,7 +24,7 @@ function SendMail() {
         //"Foresatte: " + Foresatte;
 
     window.location.href =
-        "mailto:vibeke.valestrand@glode.no?subject="
+        "mailto:vibeke.valestrand@glode.no"
     document.querySelector("form").style.display = "none";
 
     document.getElementById("takkMelding").style.display = "block";
