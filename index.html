@@ -53,7 +53,8 @@
             </div>
             <p>Meld deg på nå:</p>
             <div> 
-                <form href="mailto:vibeke.valestrand@glode.no" onsubmit="SendMail(); return false;">
+                <form id="pameldingForm" name="pamelding" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="pamelding">
                     <label for="navn">Navn / Gruppenavn</label>
                     <input type="text" id="navn" name="navn" required>
 
