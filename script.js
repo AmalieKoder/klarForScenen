@@ -23,8 +23,6 @@ function SendMail() {
         //"Foto/film tillatt: " + Foto + "\n" +
         //"Foresatte: " + Foresatte;
 
-    window.location.href =
-        "mailto:vibeke.valestrand@glode.no"
     document.querySelector("form").style.display = "none";
 
     document.getElementById("takkMelding").style.display = "block";
